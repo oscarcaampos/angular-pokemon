@@ -2,6 +2,8 @@
 
 Este proyecto es una aplicación web que muestra una lista de Pokémon y permite ver los detalles de cada uno de ellos.
 
+![Video de demostración del proyecto angular-pokemon](src/assets/img/demo-angular-pokemon.gif)
+
 ## Características
 
 - Lista de Pokémon: Muestra una lista de Pokémon con su imagen y nombre.
