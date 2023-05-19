@@ -1,0 +1,22 @@
+<!--components\pokemons-list\pokemons-list.component.html -->
+
+<div class="pokemon-list">
+  <h2 class="pokemon-list-title">Pokemon List</h2>
+  <div class="pokemon-card" *ngFor="let pokemon of pokemonDetails">
+    <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" class="pokemon-image">
+    <div class="pokemon-info">
+      <h3 class="pokemon-name">{{ pokemon.name }}</h3>
+      <hr>
+      <h2 class="pokemon-ability-title">Abilities:</h2>
+      <div *ngFor="let ability of pokemon.abilities">
+        <p class="pokemon-ability">{{ ability.ability.name}}</p>
+      </div>
+      <h2 class="pokemon-type-title">Types:</h2>
+      <div *ngFor="let type of pokemon.types">
+        <p class="pokemon-type">{{ type.type.name }}</p>
+      </div>
+    </div>
+    <div class="pokemon-button-container">
+      <button class="pokemon-button" (click)="showPokemonDetails(pokemon.id)">Details</button>
+  </div>
+</div>

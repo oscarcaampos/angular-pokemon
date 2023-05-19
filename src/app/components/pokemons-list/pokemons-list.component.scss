@@ -1,0 +1,85 @@
+/* components\pokemons-list\pokemons-list.component.scss */
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pokemon-list-title {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #ccc;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.pokemon-card {
+  display: flex; /* Agregado */
+  flex-direction: column; /* Agregado */
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  padding-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+.pokemon-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.pokemon-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.pokemon-ability-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.pokemon-type-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.pokemon-button-container {
+  margin-top: auto; /* Agregado */
+}
+
+.pokemon-button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #9f0100;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 14px;
+  margin: 0;
+}

@@ -1,0 +1,49 @@
+<!--components\pokemon-detail\pokemon-detail.component.html-->
+
+<div class="pokemon-container">
+  <div class="pokemon-card" *ngIf="pokemon">
+    <div class="pokemon-img">
+      <img
+        [src]="pokemon.sprites.front_default"
+        alt="{{ pokemon.name }}"
+        class="pokemon-image"
+      />
+    </div>
+    <div class="pokemon-header">
+      <h2 class="pokemon-name">{{ pokemon.name }}</h2>
+      <h3 class="pokemon-id">ID: {{ pokemon.id }}</h3>
+    </div>
+    <hr />
+    <!-- Now, i need 2 columns -->
+    <div class="pokemon-column">
+      <div class="pokemon-info">
+        <h2 class="pokemon-ability-title">Abilities:</h2>
+        <div *ngFor="let ability of pokemon.abilities">
+          <p class="pokemon-ability">{{ ability.ability.name }}</p>
+        </div>
+      </div>
+      <div class="pokemon-info">
+        <h2 class="pokemon-type-title">Types:</h2>
+        <div *ngFor="let type of pokemon.types">
+          <p class="pokemon-type">{{ type.type.name }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="pokemon-moves">
+      <h2 class="pokemon-moves-title">Moves:</h2>
+      <div class="moves-list">
+        <table>
+          <tr>
+            <th>Move Name</th>
+            <th>Level</th>
+          </tr>
+          <tr *ngFor="let move of pokemon.moves">
+            <td>{{ move.move.name }}</td>
+            <td>{{ move.version_group_details[0].level_learned_at }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <button class="pokemon-button" (click)="goBack()">Back</button>
+  </div>
+</div>

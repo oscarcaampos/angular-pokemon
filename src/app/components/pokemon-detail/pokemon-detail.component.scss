@@ -1,0 +1,143 @@
+/**components\pokemon-detail\pokemon-detail.component.scss*/
+
+.pokemon-moves-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.pokemon-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pokemon-card {
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  padding-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+.pokemon-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.pokemon-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+
+.pokemon-id {
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.pokemon-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pokemon-info {
+  width: 50%;
+}
+
+.pokemon-ability-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.pokemon-type-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.pokemon-ability {
+  text-transform: capitalize;
+}
+
+.pokemon-type {
+  text-transform: capitalize;
+}
+
+
+.moves-list {
+  max-height: 200px; /* Ajusta esta altura máxima según tus necesidades */
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f4f4f4;
+  border: 1px solid #ccc;
+  max-width: 250px;
+  margin: 0 auto;
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f4f4f4;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+
+    th {
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+
+    td {
+      border: 1px solid #ccc;
+      padding: 5px;
+    }
+  }
+}
+
+.pokemon-button {
+  width: 100px;
+  background-color: #9f0100;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+
+}
