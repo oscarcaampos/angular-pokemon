@@ -37,7 +37,7 @@ ng serve
 El proyecto está estructurado de la siguiente manera:
 
 - **components/header**: Contiene el componente de encabezado de la aplicación, que muestra el título, unbackground de fondo con parallax, partículas interactivas haciendo click, y un botón para hacer scroll y pasar a la siguiente sección.
-- **components/pokemon-list**: Contiene el componente de la lista de Pokémon, que muestra la lista de Pokémon con su imagen y nombre.
+- **components/pokemons-list**: Contiene el componente de la lista de Pokémons, que muestra la lista de Pokémons con su imagen y nombre.
 - **components/pokemon-detail**: Contiene el componente de los detalles de Pokémon, que muestra la imagen, nombre, ID, habilidades, tipos y movimientos del Pokémon seleccionado.
 
 ## Contribución
